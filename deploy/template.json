@@ -83,15 +83,6 @@
             }
         },
         {
-            "name": "[parameters('networkSecurityGroupName')]",
-            "type": "Microsoft.Network/networkSecurityGroups",
-            "apiVersion": "2019-02-01",
-            "location": "[parameters('location')]",
-            "properties": {
-                "securityRules": "[parameters('networkSecurityGroupRules')]"
-            }
-        },
-        {
             "name": "[parameters('virtualMachineName')]",
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2020-12-01",
@@ -133,19 +124,6 @@
                 "availabilitySet": {
                     "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 }
-            }
-        },
-        {
-            "name": "[parameters('availabilitySetName')]",
-            "type": "Microsoft.Compute/availabilitySets",
-            "apiVersion": "2019-07-01",
-            "location": "[parameters('location')]",
-            "properties": {
-                "platformFaultDomainCount": "[parameters('availabilitySetPlatformFaultDomainCount')]",
-                "platformUpdateDomainCount": "[parameters('availabilitySetPlatformUpdateDomainCount')]"
-            },
-            "sku": {
-                "name": "Aligned"
             }
         }
     ],
