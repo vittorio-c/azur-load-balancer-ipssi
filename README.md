@@ -1,4 +1,6 @@
-# Projet
+# About
+
+> This is a student project
 
 Mise en place un load balancer dans Azur, avec un simple site sous python/flask tournant sur plusieurs VM
 
