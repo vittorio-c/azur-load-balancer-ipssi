@@ -2,6 +2,8 @@
 
 Mise en place un load balancer dans Azur, avec un simple site sous python/flask tournant sur plusieurs VM
 
+Setting up a load balancer in Azur, with a simple python/flask site running on several VMs
+
 # Etapes
 
 Tuto suivi ici : <https://docs.microsoft.com/fr-fr/azure/load-balancer/quickstart-load-balancer-standard-public-portal?tabs=option-1-create-load-balancer-basic>
